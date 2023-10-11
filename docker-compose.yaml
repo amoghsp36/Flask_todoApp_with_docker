@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  todos:
+    build: ./todos                 # todos is one folder containing all the folders add another service (frontend or backend) with build, container_name, ports
+    container_name: todos_c
+    ports:
+      - '4000:8080'
+      
